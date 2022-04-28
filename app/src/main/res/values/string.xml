@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">My Diet Diary</string>
+    <string name="berat">Weight</string>
+    <string name="tinggi">Height</string>
+    <string name="check">Check</string>
+    <string name="calc">Calculate</string>
+    <string name="usia">Age</string>
+    <string name="save">Save</string>
+    <string name="username">Username</string>
+    <string name="oldpassword">Old Password</string>
+    <string name="newpassword">New Password</string>
+    <string name="confirmpassword">Confirm Password</string>
+    <string name="email">Email</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="Header_Title">My Diet Diary</string>
+    <string name="btn_link_to_register">Not a Member? Sign up now.</string>
+    <string name="btn_link_to_login">Already registered? Sign in here.</string>
+    <string name="monitor_tab1">Progress</string>
+    <string name="monitor_tab2">Diet Info</string>
+    <string name="setting_tab1">Account</string>
+    <string name="setting_tab2">Diagnose</string>
+
+</resources>

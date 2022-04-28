@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/tv_weight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="20dp"
+        android:text="Weight"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/tv_height"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_weight"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="20dp"
+        android:text="Height"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/tv_age"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_height"
+        android:layout_marginBottom="20dp"
+        android:layout_marginEnd="20dp"
+        android:text="Age"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/tv_gender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_age"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="20dp"
+        android:text="Gender"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/tv_bloodType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_gender"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="20dp"
+        android:text="BloodType"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/tv_medicalHistory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_bloodType"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="20dp"
+        android:text="Medical\nHistory"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/et_weight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/tv_weight"
+        android:layout_marginLeft="30dp"
+        android:layout_toRightOf="@id/tv_weight"
+        android:inputType="numberSigned" />
+
+    <EditText
+        android:id="@+id/et_height"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/tv_height"
+        android:layout_alignLeft="@id/et_weight"
+        android:layout_below="@id/et_weight"
+        android:inputType="numberSigned" />
+
+    <EditText
+        android:id="@+id/et_age"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/tv_age"
+        android:layout_alignLeft="@id/et_weight"
+        android:layout_below="@id/et_height"
+        android:inputType="numberSigned" />
+
+    <RadioGroup
+        android:id="@+id/rg_gender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_age"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/tv_gender"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rb_male"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Male" />
+
+        <RadioButton
+            android:id="@+id/rb_female"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Female" />
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/rg_bloodtype"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rg_gender"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/tv_bloodType"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rb_golA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="A" />
+
+        <RadioButton
+            android:id="@+id/rb_golB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="B" />
+
+        <RadioButton
+            android:id="@+id/rb_golAB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="AB" />
+
+        <RadioButton
+            android:id="@+id/rb_golO"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="O" />
+    </RadioGroup>
+
+    <LinearLayout
+        android:id="@+id/ll_medicalHistory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rg_bloodtype"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/tv_medicalHistory"
+        android:orientation="vertical">
+
+        <CheckBox
+            android:id="@+id/cb_maag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Maag" />
+
+        <CheckBox
+            android:id="@+id/cb_hypertension"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hypertension" />
+
+        <CheckBox
+            android:id="@+id/cb_diabetes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Diabetes" />
+
+        <CheckBox
+            android:id="@+id/cb_gastritis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gastritis" />
+
+        <CheckBox
+            android:id="@+id/cb_cholesterol"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cholesterol" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_save"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="400dp"
+        android:text="@string/save"
+        android:background="@color/colorAccentDark"
+        android:textColor="@android:color/white"/>
+</RelativeLayout>

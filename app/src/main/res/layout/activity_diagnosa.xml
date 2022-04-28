@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".DiagnosaActivity"
+    android:background="@color/colorPrimary">
+
+    <TextView
+        android:id="@+id/tv_weight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="20dp"
+        android:text="Weight"
+        android:textSize="20sp"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:id="@+id/tv_height"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_weight"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="20dp"
+        android:text="Height"
+        android:textSize="20sp"
+        android:textColor="@android:color/white"/>
+
+    <TextView
+        android:id="@+id/tv_age"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_height"
+        android:layout_marginBottom="20dp"
+        android:layout_marginEnd="20dp"
+        android:text="Age"
+        android:textSize="20sp"
+        android:textColor="@android:color/white"/>
+
+    <TextView
+        android:id="@+id/tv_gender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_age"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="20dp"
+        android:text="Gender"
+        android:textSize="20sp"
+        android:textColor="@android:color/white"/>
+
+    <TextView
+        android:id="@+id/tv_bloodType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_gender"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="20dp"
+        android:text="BloodType"
+        android:textSize="20sp"
+        android:textColor="@android:color/white"/>
+
+    <TextView
+        android:id="@+id/tv_medicalHistory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_bloodType"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="20dp"
+        android:text="Medical\nHistory"
+        android:textSize="20sp"
+        android:textColor="@android:color/white"/>
+
+    <EditText
+        android:id="@+id/et_weight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/tv_weight"
+        android:layout_marginLeft="30dp"
+        android:layout_toRightOf="@id/tv_weight"
+        android:inputType="numberSigned"
+        android:textColor="@android:color/white"
+        android:backgroundTint="@android:color/white"
+        android:layout_marginTop="20dp"/>
+
+    <EditText
+        android:id="@+id/et_height"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/tv_height"
+        android:layout_alignLeft="@id/et_weight"
+        android:layout_below="@id/et_weight"
+        android:inputType="numberSigned"
+        android:textColor="@android:color/white"
+        android:backgroundTint="@android:color/white"/>
+
+    <EditText
+        android:id="@+id/et_age"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/tv_age"
+        android:layout_alignLeft="@id/et_weight"
+        android:layout_below="@id/et_height"
+        android:inputType="numberSigned"
+        android:textColor="@android:color/white"
+        android:backgroundTint="@android:color/white"/>
+
+    <RadioGroup
+        android:id="@+id/rg_gender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_age"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/tv_gender"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rb_male"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Male"
+            android:textColor="@android:color/white"
+            android:buttonTint="@android:color/white" />
+
+        <RadioButton
+            android:id="@+id/rb_female"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Female"
+            android:textColor="@android:color/white"
+            android:buttonTint="@android:color/white"/>
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/rg_bloodtype"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rg_gender"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/tv_bloodType"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rb_golA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="A"
+            android:textColor="@android:color/white"
+            android:buttonTint="@android:color/white"/>
+
+        <RadioButton
+            android:id="@+id/rb_golB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="B"
+            android:textColor="@android:color/white"
+            android:buttonTint="@android:color/white"/>
+
+        <RadioButton
+            android:id="@+id/rb_golAB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="AB"
+            android:textColor="@android:color/white"
+            android:buttonTint="@android:color/white"/>
+
+        <RadioButton
+            android:id="@+id/rb_golO"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="O"
+            android:textColor="@android:color/white"
+            android:buttonTint="@android:color/white"/>
+    </RadioGroup>
+
+    <LinearLayout
+        android:id="@+id/ll_medicalHistory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rg_bloodtype"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/tv_medicalHistory"
+        android:orientation="vertical">
+
+        <CheckBox
+            android:id="@+id/cb_maag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Maag"
+            android:textColor="@android:color/white"
+            android:buttonTint="@android:color/white"/>
+
+        <CheckBox
+            android:id="@+id/cb_hypertension"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hypertension"
+            android:textColor="@android:color/white"
+            android:buttonTint="@android:color/white"/>
+
+        <CheckBox
+            android:id="@+id/cb_diabetes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Diabetes"
+            android:textColor="@android:color/white"
+            android:buttonTint="@android:color/white"/>
+
+        <CheckBox
+            android:id="@+id/cb_gastritis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gastritis"
+            android:textColor="@android:color/white"
+            android:buttonTint="@android:color/white"/>
+
+        <CheckBox
+            android:id="@+id/cb_cholesterol"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cholesterol"
+            android:textColor="@android:color/white"
+            android:buttonTint="@android:color/white"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_finish"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="425dp"
+        android:text="Finish"
+        android:background="@android:color/white"
+        android:textColor="@color/colorAccentDark"/>
+</RelativeLayout>
